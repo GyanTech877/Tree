@@ -15,8 +15,8 @@ public class Solution1 {
         int lD=minDepth(root.left);
         int rD=minDepth(root.right);
         if(root.left!=null && root.right!=null) return 1+ Math.min(lD,rD);
-        else if(root.left!=null) return 1+ lD;
-        return 1+ rD;
+        else if(root.left!=null) return 1+lD;
+        return 1+rD;
     }
 }
 
